@@ -1,3 +1,7 @@
 <% @projects.each do |project| %>
   <p> <%= project.name %> </p>
+  
+  <% unless project.screenshots.empty? %>
+    <img src=<%= project.screenshots.first.url %> alt="">
+  <% end %>
 <% end %>

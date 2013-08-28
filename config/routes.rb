@@ -1,8 +1,8 @@
 PortfolioSite::Application.routes.draw do
 
-  # root 'projects#index'
+  root to: 'projects#index'
 
-  resources :projects
+  resources :projects, only: [:index]
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
