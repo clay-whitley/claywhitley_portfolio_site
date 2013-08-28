@@ -1,0 +1,11 @@
+.title_table_first_row > td {
+  border-bottom: 1px solid black;
+}
+
+.title_table_left {
+  border-right: 1px solid black;
+}
+
+.project_body {
+  display: none;
+}

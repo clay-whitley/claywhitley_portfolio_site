@@ -14,9 +14,17 @@
               <button class="button" id="prev-project">prev</button>
             </div>
             <div class="large-8 columns">
-              <div style="border-bottom: 1px solid grey">Project: Lorem</div>
-              <div>Tech: Ipsum</div>
-            </div>
+              <table>
+                <tr class="title_table_first_row">
+                  <td class="title_table_left">Project:</td>
+                  <td id="project_name"></td>
+                </tr>
+                <tr>
+                  <td class="title_table_left">Tech:</td>
+                  <td id="project_tech">Lorem ipsum</td>
+                </tr>
+              </table>
+            </div>  
             <div class="large-2 columns">
               <button class="button" id="next-project">next</button>
             </div>
@@ -24,21 +32,16 @@
         </div>
       </div>
       <% @projects.each do |project| %>
-        <div class="row">
-          <div class="large-12 columns">
-            <%= project.name %>
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-12 columns">
-            <% unless project.screenshots.empty? %>
-              <img src=<%= project.screenshots.first.url %> alt="">
-            <% end %>
+        <div class="project_body" data-projectname=<%= project.name %>>
+          <div class="row">
+            <div class="large-12 columns">
+              <% unless project.screenshots.empty? %>
+                <img src=<%= project.screenshots.first.url %> alt="">
+              <% end %>
+            </div>
           </div>
         </div>
       <% end %>
-      <hr />
- 
     </div>
  
     <!-- End Main Content -->
