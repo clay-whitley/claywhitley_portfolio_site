@@ -7,9 +7,18 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <nav>
-    <%= link_to "WORK", projects_path %>
-  </nav>
+  <div class="row">
+    <div class="large-12 columns">
+      <div class="nav-bar left">
+       <ul class="button-group">
+         <li><%= link_to "WORK", projects_path, class: 'button' %></li>
+         <li><a href="#" class="button">Link 2</a></li>
+         <li><a href="#" class="button">Link 3</a></li>
+        </ul>
+      </div>
+      <hr />
+    </div>
+  </div>
 
 <%= yield %>
 
