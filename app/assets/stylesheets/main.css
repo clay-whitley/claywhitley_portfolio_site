@@ -1,0 +1,28 @@
+#main_nav {
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+#main_nav li {
+  width: 33%;
+  box-sizing: border-box;
+  background-color: #CCC;
+  border: 1px solid #999;
+  float:left;
+  text-align: center;
+  height: 120px;
+  padding:20px 0;
+}
+
+#main_nav li.active {
+  background-color: #999;
+}
+
+#main_nav li a {
+  color: white;
+  font-size: 45px;
+}
+
+.clearfix {
+  clear: both;
+}

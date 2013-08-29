@@ -5,10 +5,7 @@ function initializeProjects(){
   $('.project_body').first().attr('data-active', 'true');
 }
 
-$(document).ready(function(){
-
-  initializeProjects();
-
+function createEventListeners(){
   $('#prev-project').on('click', function(){
     $current = $('.project_body[data-active="true"]');
     $prev = $('.project_body[data-active="true"]').prev('.project_body');
@@ -28,5 +25,11 @@ $(document).ready(function(){
       $next.show().attr('data-active', 'true');
     }
   });
+}
+
+$(document).ready(function(){
+
+  initializeProjects();
+  createEventListeners();
 
 });
