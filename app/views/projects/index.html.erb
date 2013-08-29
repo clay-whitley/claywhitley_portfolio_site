@@ -32,7 +32,7 @@
         </div>
       </div>
       <% @projects.each do |project| %>
-        <div class="project_body" data-projectname=<%= project.name %>>
+        <div class="project_body" data-active="false" data-projectname=<%= project.name %>>
           <div class="row">
             <div class="large-12 columns">
               <% unless project.screenshots.empty? %>
