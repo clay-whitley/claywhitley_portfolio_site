@@ -9,3 +9,7 @@
 .project_body {
   display: none;
 }
+
+.project_label {
+  min-width: 350px;
+}

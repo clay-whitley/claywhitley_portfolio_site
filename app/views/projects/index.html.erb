@@ -4,52 +4,10 @@
   <!-- Main Page Content and Sidebar -->
  
   <div class="row">
- 
-    <!-- Main Blog Content -->
-    <div class="large-9 columns" role="content">
-      <div class="row">
-        <div class="large-12 columns">
-          <div class="row">
-            <div class="large-2 columns">
-              <button class="button" id="prev-project">prev</button>
-            </div>
-            <div class="large-8 columns">
-              <table>
-                <tr class="title_table_first_row">
-                  <td class="title_table_left">Project:</td>
-                  <td id="project_name"></td>
-                </tr>
-                <tr>
-                  <td class="title_table_left">Tech:</td>
-                  <td id="project_tech">Lorem ipsum</td>
-                </tr>
-              </table>
-            </div>  
-            <div class="large-2 columns">
-              <button class="button" id="next-project">next</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <% @projects.each do |project| %>
-        <div class="project_body panel" data-active="false" data-projectname=<%= project.name %>>
-          <div class="row">
-            <div class="large-12 columns">
-              <% unless project.screenshots.empty? %>
-                <img src=<%= project.screenshots.first.url %> alt="">
-              <% end %>
-            </div>
-          </div>
-        </div>
-      <% end %>
-    </div>
- 
-    <!-- End Main Content -->
- 
- 
+
     <!-- Sidebar -->
  
-    <aside class="large-3 columns">
+    <aside class="large-3 columns right">
  
       <h5>Clay Whitley</h5>
       <hr />
@@ -72,32 +30,50 @@
         <li>Git and Github</li>
         <li>Photoshop and Illustrator</li>
       </ul>
- 
     </aside>
  
     <!-- End Sidebar -->
+ 
+    <!-- Main Blog Content -->
+    <div class="large-9 columns" role="content">
+      <div class="row">
+        <div class="large-12 columns">
+          <div class="row">
+            <div class="large-2 columns">
+              <button class="button" id="prev-project">prev</button>
+            </div>
+            <div class="large-8 columns">
+              <table>
+                <tr class="title_table_first_row">
+                  <td class="title_table_left">Project:</td>
+                  <td id="project_name" class=""></td>
+                </tr>
+                <tr>
+                  <td class="title_table_left">Tech:</td>
+                  <td id="project_tech" class="project_label">Lorem ipsum</td>
+                </tr>
+              </table>
+            </div>  
+            <div class="large-2 columns">
+              <button class="button" id="next-project">next</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <% @projects.each do |project| %>
+        <div class="project_body panel" data-active="false" data-projectname="<%= project.name %>">
+          <div class="row">
+            <div class="large-12 columns">
+              <% unless project.screenshots.empty? %>
+                <img src=<%= project.screenshots.first.url %> alt="">
+              <% end %>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+ 
+    <!-- End Main Content -->
   </div>
  
   <!-- End Main Content and Sidebar -->
- 
- 
-  <!-- Footer -->
- 
-  <footer class="row">
-    <div class="large-12 columns">
-      <hr />
-      <div class="row">
-        <div class="large-6 columns">
-          <p>&copy; Copyright no one at all. Go to town.</p>
-        </div>
-        <div class="large-6 columns">
-          <ul class="inline-list right">
-            <li><a href="#">Link 1</a></li>
-            <li><a href="#">Link 2</a></li>
-            <li><a href="#">Link 3</a></li>
-            <li><a href="#">Link 4</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </footer>
