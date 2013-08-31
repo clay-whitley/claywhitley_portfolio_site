@@ -13,3 +13,13 @@
 .project_label {
   min-width: 350px;
 }
+
+.url-dropdown {
+  width: 200px;
+  margin:0 auto;
+  border: 1px solid #BBB;
+  background-color: #DDD;
+  display:none;
+  text-align: center;
+  padding: 10px 0;
+}

@@ -61,13 +61,16 @@
         </div>
       </div>
       <% @projects.each do |project| %>
-        <div class="project_body panel" data-active="false" data-projectname="<%= project.name %>">
-          <div class="row">
+        <div class="project_body" data-active="false" data-projectname="<%= project.name %>">
+          <div class="row panel">
             <div class="large-12 columns">
               <% unless project.screenshots.empty? %>
                 <img src=<%= project.screenshots.first.url %> alt="">
               <% end %>
             </div>
+          </div>
+          <div class="url-dropdown">
+            URL: <%= project.url %>
           </div>
         </div>
       <% end %>
