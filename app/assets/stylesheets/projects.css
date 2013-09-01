@@ -17,7 +17,9 @@
 .url-dropdown {
   width: 200px;
   margin:0 auto;
-  border: 1px solid #BBB;
+  border-bottom: 1px solid #BBB;
+  border-left: 1px solid #BBB;
+  border-right: 1px solid #BBB;
   background-color: #DDD;
   display:none;
   text-align: center;

@@ -51,7 +51,7 @@
               <table>
                 <tr class="title_table_first_row">
                   <td class="title_table_left">Project:</td>
-                  <td id="project_name" class=""></td>
+                  <td id="project_name" class=""><span id="project_id" class="right"></span></td>
                 </tr>
                 <tr>
                   <td class="title_table_left">Tech:</td>
@@ -66,7 +66,7 @@
         </div>
       </div>
       <% @projects.each do |project| %>
-        <div class="project_body" data-active="false" data-projectname="<%= project.name %>">
+        <div class="project_body" data-active="false" data-projectid="<%= project.id %>"data-projectname="<%= project.name %>">
           <div class="row panel">
             <div class="large-12 columns">
               <% unless project.screenshots.empty? %>
