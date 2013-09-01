@@ -29,10 +29,17 @@ function createEventListeners(){
 
   $(document).on('scroll', function(){
     console.log($(document).scrollTop());
-    if ($(document).scrollTop() > 50){
+    if ($(document).scrollTop() > 50) {
       $('#main_nav').removeClass('nav-full').addClass('nav-minimized');
     } else {
       $('#main_nav').removeClass('nav-minimized').addClass('nav-full');
+    }
+    if ($(document).scrollTop() > 150){
+      $('#main_nav').addClass('fixed');
+      $('body').css({'margin-top': '72px'});
+    } else {
+      $('#main_nav').removeClass('fixed');
+      $('body').css({'margin-top': '0'});
     }
   });
 }

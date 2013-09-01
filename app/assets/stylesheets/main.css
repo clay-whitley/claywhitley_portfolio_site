@@ -2,8 +2,13 @@
   list-style: none;
   margin-bottom: 0;
   max-width: 100%;
-  padding-top:150px;
   background: url('/images/mooning.png');
+}
+
+.nav-logo {
+  height: 150px;
+  background: url('/images/mooning.png');
+  max-width: 100%; 
 }
 
 .nav-full a {
@@ -24,11 +29,14 @@
   background-color:rgba(230,230,230,0.5);
 }
 
+#main_nav a:hover {
+  background-color:rgba(255,255,255,0.5);
+}
+
 .nav-minimized {
   list-style: none;
   margin-bottom: 0;
   max-width: 100%;
-  padding-top:150px;
   background: url('/images/mooning.png');
 }
 
@@ -56,5 +64,5 @@ body {
 
 .main-content {
   background-color:rgba(255,255,255,0.5);
-  padding: 15px 0;
+  padding: 65px 0;
 }
