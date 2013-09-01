@@ -1,24 +1,50 @@
-#main_nav {
+.nav-full {
   list-style: none;
   margin-bottom: 0;
   max-width: 100%;
+  padding-top:150px;
+  background: url('/images/mooning.png');
 }
 
-#main_nav a {
+.nav-full a {
   box-sizing: border-box;
-  background-color: #CCC;
   border: 1px solid #999;
   text-align: center;
-  height: 120px;
   color: white;
   font-size: 45px;
+  font-weight: bold;
   padding: 25px 0;
+  -webkit-transition:font-size 0.5s ease-in;  
+  -moz-transition:font-size 0.5s ease-in;  
+  -o-transition:font-size 0.5s ease-in;  
+  transition:font-size 0.5s ease-in;
 }
 
 #main_nav a.active {
-  background-color: #999;
+  background-color:rgba(230,230,230,0.5);
 }
 
+.nav-minimized {
+  list-style: none;
+  margin-bottom: 0;
+  max-width: 100%;
+  padding-top:150px;
+  background: url('/images/mooning.png');
+}
+
+.nav-minimized a {
+  box-sizing: border-box;
+  border: 1px solid #999;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 25px 0;
+  -webkit-transition:font-size 0.5s ease-in;  
+  -moz-transition:font-size 0.5s ease-in;  
+  -o-transition:font-size 0.5s ease-in;  
+  transition:font-size 0.5s ease-in;
+}
 
 .clearfix {
   clear: both;

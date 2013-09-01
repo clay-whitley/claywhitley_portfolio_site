@@ -26,10 +26,18 @@ function createEventListeners(){
       $next.show().attr('data-active', 'true').find('.url-dropdown').slideDown();
     }
   });
+
+  $(document).on('scroll', function(){
+    console.log($(document).scrollTop());
+    if ($(document).scrollTop() > 50){
+      $('#main_nav').removeClass('nav-full').addClass('nav-minimized');
+    } else {
+      $('#main_nav').removeClass('nav-minimized').addClass('nav-full');
+    }
+  });
 }
 
 $(document).ready(function(){
-
   initializeProjects();
   createEventListeners();
 
