@@ -11,7 +11,7 @@
 }
 
 .project_label {
-  min-width: 350px;
+  width: 100%;
 }
 
 .url-dropdown {

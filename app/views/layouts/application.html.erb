@@ -7,15 +7,10 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <div class="row">
-    <div class="large-12 columns">
-      <ul id="main_nav">
-        <li class="active"><%= link_to "WORK", projects_path %></li>
-        <li><a href="#">BLOG</a></li>
-        <li><a href="#">ME</a></li>
-        <div class="clearfix"></div>
-      </ul>
-    </div>
+  <div class="row" id="main_nav">
+    <%= link_to "WORK", projects_path, class: 'small-4 columns active' %>
+    <a href="#" class="small-4 columns">BLOG</a>
+    <a href="#" class="small-4 columns">ME</a>
   </div>
 
 <%= yield %>
