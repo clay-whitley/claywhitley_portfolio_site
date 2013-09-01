@@ -12,6 +12,12 @@ project3 = Project.create(name: 'PayPal: Verify Bank Account', url: 'localhost',
 project4 = Project.create(name: 'Flashcard App: Get Carded', url: 'http://mcflashy.herokuapp.com/', description: 'lorem ipsum')
 project5 = Project.create(name: 'Backbone App: Skill Tracker', url: 'localhost', description: 'lorem ipsum')
 
+project1.skills.create([{name: 'HTML'},{name: 'CSS'},{name: 'JavaScript'}])
+project2.skills.create([{name: 'HTML'},{name: 'CSS'},{name: 'jQuery'},{name: 'jQuery Mobile'}])
+project3.skills.create([{name: 'HTML'},{name: 'CSS'},{name: 'jQuery'}])
+project4.skills.create([{name: 'HTML'},{name: 'CSS'},{name: 'jQuery'},{name: 'AJAX'},{name: 'Sinatra'}])
+project5.skills.create([{name: 'HTML'},{name: 'CSS'},{name: 'Backbone.js'},{name: 'Sinatra'}])
+
 project1.screenshots.create(url: '/images/ebay_search.png')
 project2.screenshots.create(url: '/images/nmt_slide1.png')
 project3.screenshots.create(url: '/images/paypal_verify.png')
