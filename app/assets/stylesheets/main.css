@@ -5,18 +5,12 @@
   background: url('/images/mooning.png');
 }
 
-.nav-logo {
-  height: 150px;
-  background: url('/images/mooning.png');
-  max-width: 100%; 
-}
-
 .nav-full a {
   box-sizing: border-box;
   border: 1px solid #999;
   text-align: center;
   color: white;
-  font-size: 45px;
+  font-size: 20px;
   font-weight: bold;
   padding: 25px 0;
   -webkit-transition:font-size 0.5s ease-in;  
@@ -33,36 +27,16 @@
   background-color:rgba(255,255,255,0.5);
 }
 
-.nav-minimized {
-  list-style: none;
-  margin-bottom: 0;
-  max-width: 100%;
-  background: url('/images/mooning.png');
-}
-
-.nav-minimized a {
-  box-sizing: border-box;
-  border: 1px solid #999;
-  text-align: center;
-  color: white;
-  font-size: 20px;
-  font-weight: bold;
-  padding: 25px 0;
-  -webkit-transition:font-size 0.5s ease-in;  
-  -moz-transition:font-size 0.5s ease-in;  
-  -o-transition:font-size 0.5s ease-in;  
-  transition:font-size 0.5s ease-in;
-}
-
 .clearfix {
   clear: both;
 }
 
 body {
   background: url('/images/triangular.png');
+  margin-top: 72px;
 }
 
 .main-content {
   background-color:rgba(255,255,255,0.5);
-  padding: 65px 0;
+  padding: 20px 0;
 }
