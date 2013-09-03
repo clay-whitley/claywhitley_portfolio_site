@@ -1,4 +1,4 @@
-# claywhitley.com
-### Portfolio and Blog site
+= claywhitley.com
+=== Portfolio and Blog site
 
 Source code for my personal website.
