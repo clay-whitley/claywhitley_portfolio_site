@@ -6,6 +6,13 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
+User.delete_all
+Project.delete_all
+Screenshot.delete_all
+Skill.delete_all
+
+user = User.create(email: "clay.aaron.whitley@gmail.com", password: "portfoliopassword", password_confirmation: "portfoliopassword")
+
 project1 = Project.create(name: 'PayPal: eBay Search', url: 'localhost', description: 'lorem ipsum')
 project2 = Project.create(name: 'PayPal: New Member Tour', url: 'localhost', description: 'lorem ipsum')
 project3 = Project.create(name: 'PayPal: Verify Bank Account', url: 'localhost', description: 'lorem ipsum')
