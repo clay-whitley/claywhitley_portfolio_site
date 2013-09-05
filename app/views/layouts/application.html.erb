@@ -10,17 +10,31 @@
   <div class="row nav-logo"></div>
   <div class="row nav-full fixed" id="main_nav">
     <%= link_to "WORK", projects_path, class: 'small-4 columns active' %>
-    <a href="#" class="small-4 columns">BLOG</a>
+    <%= link_to "BLOG", posts_path, class: 'small-4 columns' %>
     <a href="#" class="small-4 columns">ME</a>
   </div>
   <% if user_signed_in? %>
-    <%= link_to "Logout", destroy_user_session_path, method: :delete %> 
+    <div class="row admin-panel">
+      <div class="small-3 columns">
+        Admin actions:
+      </div>
+      <div class="small-3 columns">
+        <%= link_to "New post", new_post_path %>
+      </div>
+      <div class="small-3 columns">
+        <%= link_to "Logout", destroy_user_session_path, method: :delete %>
+      </div>
+    </div>
   <% end %>
 
-  <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
+  <% if notice || alert %>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+  <% end %>
 
-<%= yield %>
+  <div class="row main-content">
+    <%= yield %>
+  </div>
 
   <!-- Footer -->
  

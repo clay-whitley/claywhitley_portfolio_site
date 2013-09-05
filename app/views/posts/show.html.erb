@@ -1,0 +1,13 @@
+<div class="large-12 columns">
+  <h1><%= @post.title %></h1>
+  <h3><%= @post.posted_date %></h3>
+  <span>Tags:
+    <% @post.tags.each do |tag| %>
+        <%= tag.name %>
+    <% end %>
+  </span>
+  <hr>
+  <p>
+    <%= @post.content %>
+  </p>
+</div>
