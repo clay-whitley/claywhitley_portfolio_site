@@ -968,11 +968,11 @@
 //
 
 // Background color for the top bar
-// $topbar-bg: #111;
+$topbar-bg: #333;
 
 // Height and margin
 // $topbar-height: 45px;
-// $topbar-margin-bottom: emCalc(30px);
+$topbar-margin-bottom: emCalc(0px);
 
 // Control Input height for top bar
 // $topbar-input-height: 2.45em;
@@ -982,7 +982,7 @@
 // $topbar-title-font-size: emCalc(17px);
 
 // Set the link colors and styles for top-level nav
-// $topbar-link-color: #fff;
+$topbar-link-color: #eee;
 // $topbar-link-weight: bold;
 // $topbar-link-font-size: emCalc(13px);
 
