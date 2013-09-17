@@ -1,0 +1,9 @@
+<div class="large-12 columns">
+  <%= form_for @post, url: {action: "update"}, html: {class: "edit-post-form"} do |f| %>
+    <%= f.text_field :title %>
+    <%= f.date_select :posted_date, class: 'date-input' %>
+    <%= f.text_area :content, class: 'content-input' %>
+
+    <%= f.submit "Update" %>
+  <% end %>
+</div>
