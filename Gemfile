@@ -31,6 +31,7 @@ group :assets do
 end
 
 gem 'redcarpet'
+gem 'hpricot'
 
 gem 'jquery-rails'
 

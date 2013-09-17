@@ -1,13 +1,15 @@
 <% @posts.each do |post| %>
-  <div class="large-12 columns">
+  <div class="large-12 columns panel">
     <h3><%= post.title %></h3>
     <span>Tags:
       <% post.tags.each do |tag| %>
         <%= tag.name %>
       <% end %>
     </span>
-    <hr>
-    <p><%= truncate(post.content, length: 100) %></p>
+    <br>
     <%= link_to "View post", post_path(post) %>
+    <% if user_signed_in? %>
+      <%= link_to "Edit post", edit_post_path(post) %>
+    <% end %>
   </div>
 <% end %>
