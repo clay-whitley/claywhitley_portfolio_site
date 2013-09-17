@@ -10,9 +10,15 @@ class Post < ActiveRecord::Base
 
   private
 
+    class HTMLwithPygments < Redcarpet::Render::HTML
+      def block_code(code, language)
+        Pygments.highlight(code, :lexer => language)
+      end
+    end
+
     def render_html
       require 'redcarpet'
-      markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML, :autolink => true, :space_after_headers => true, :fenced_code_blocks => true, :strikethrough => true, :prettify => true)
+      markdown = Redcarpet::Markdown.new(HTMLwithPygments, :autolink => true, :space_after_headers => true, :fenced_code_blocks => true, :strikethrough => true, :prettify => true)
       self.rendered_content = markdown.render self.content
     end
 

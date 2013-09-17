@@ -32,6 +32,7 @@ end
 
 gem 'redcarpet'
 gem 'hpricot'
+gem 'pygments.rb'
 
 gem 'jquery-rails'
 
