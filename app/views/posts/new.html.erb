@@ -1,6 +1,8 @@
 <div class="large-12 columns">
   <%= form_for @post, url: {action: "create"}, html: {class: "new-post-form"} do |f| %>
-    <%= f.text_field :title %>
+    <%= f.text_field :title, placeholder: "Title" %>
+    <%= label_tag :tags, "Tags" %>
+    <%= text_field_tag :tags %>
     <%= f.date_select :posted_date, class: 'date-input' %>
     <%= f.text_area :content, class: 'content-input' %>
 
