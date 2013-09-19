@@ -15,3 +15,6 @@
 /tmp
 
 /db/seeds.rb
+
+.ruby-version
+.ruby-gemset
